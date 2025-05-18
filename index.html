@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月色真美,风也温柔</title>
+    <link rel="icon" type="image/x-icon" href="https://z1.ax1x.com/2023/10/01/pPLK9vn.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        #particles-js {
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            background-color: transparent;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-image: url('https://z1.ax1x.com/2023/10/01/pPLK9vn.jpg');
+            background-size: cover;
+            animation: breathing 3s infinite ease-in-out;
+        }
+
+        @keyframes breathing {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .intro {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #61c0bf, #7ae2d1);
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background: linear-gradient(to right, #7ae2d1, #61c0bf);
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="avatar"></div>
+        <div class="intro">
+            <h1>情侣小游戏</h1>
+            <p>客服微信：nbioss</p>
+            <p>直奔主题,如果没及时回复请见谅!</p>
+        </div>
+        <a class="button" href="https://a-1257076417.cos.ap-nanjing.myqcloud.com/h5/index.html" target="_blank">飞行棋</a>
+        <a class="button" href="https://a-1257076417.cos.ap-nanjing.myqcloud.com/h6/index.html" target="_blank">大冒险</a>
+        <a class="button" href="https://a-1257076417.cos.ap-nanjing.myqcloud.com/h7/index.html" target="_blank">摇骰子</a>
+        <a class="button" href="https://weidian.com/?userid=1388425837" target="_blank">获取识别码</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 100,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#000000'
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: 'img/github.svg',
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.4,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: false
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: false
+                    },
+                    onclick: {
+                        enable: false
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
