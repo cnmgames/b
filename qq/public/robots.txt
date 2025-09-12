@@ -1,0 +1,55 @@
+# 主要搜索引擎爬虫
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# 中国搜索引擎
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 2
+
+User-agent: Sogou web spider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YisouSpider
+Allow: /
+Crawl-delay: 2
+
+# 社交媒体爬虫
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# 其他常见爬虫
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 3
+
+# 网站地图
+Sitemap: https://cpfly.top/sitemap.xml
+Sitemap: https://cpfly.top/api/sitemap
+
+# 网站主页
+Host: https://cpfly.top

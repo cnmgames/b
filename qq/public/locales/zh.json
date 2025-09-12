@@ -1,0 +1,125 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "start": "开始",
+    "restart": "重新开始",
+    "completed": "已完成",
+    "failed": "未完成",
+    "rollDice": "掷骰子",
+    "rolling": "掷骰中...",
+    "moving": "移动中...",
+    "preparing": "准备中...",
+    "skipToHome": "跳过回到首页"
+  },
+  "game": {
+    "title": "情侣飞行棋",
+    "subtitle": "Love Flight Chess",
+    "selectMode": "选择游戏模式",
+    "modeDescription": "每种模式都有不同的互动体验",
+    "redTurn": "🔴 红方回合 (飞机 ✈️)",
+    "blueTurn": "🔵 蓝方回合 (直升机 🚁)",
+    "redWin": "🎉 红方玩家获胜！",
+    "blueWin": "🎉 蓝方玩家获胜！",
+    "backToHome": "返回首页",
+    "selectWinTask": "选择一个胜利任务来庆祝吧！",
+    "winTasksTitle": "胜利任务选择",
+    "winTaskExecution": "胜利任务执行",
+    "celebrationMessage": "完成这个任务来庆祝你们的胜利！"
+  },
+  "modes": {
+    "normal": {
+      "name": "普通版",
+      "description": "适合朋友和初次游戏"
+    },
+    "love": {
+      "name": "恋爱版",
+      "description": "适合恋爱中的情侣"
+    },
+    "couple": {
+      "name": "情侣版",
+      "description": "适合稳定关系的情侣"
+    },
+    "advanced": {
+      "name": "深入版",
+      "description": "适合想要更多刺激的情侣"
+    },
+    "intimate": {
+      "name": "私密版",
+      "description": "仅限私密空间"
+    },
+    "mixed": {
+      "name": "组合版",
+      "description": "随机组合各种模式"
+    }
+  },
+  "customMode": {
+    "title": "自定义模式",
+    "description": "创建专属于你们的游戏模式",
+    "create": "创建模式",
+    "edit": "编辑",
+    "delete": "删除",
+    "deleteConfirm": "确定要删除这个自定义模式吗？",
+    "creator": {
+      "title": "创建自定义模式",
+      "close": "关闭",
+      "basicInfo": "基本信息",
+      "modeName": "模式名称",
+      "modeDescription": "模式描述",
+      "modeNamePlaceholder": "输入模式名称",
+      "modeDescriptionPlaceholder": "描述这个模式的特色",
+      "taskSelection": "添加任务",
+      "fromExistingModes": "从现有模式中选择任务",
+      "loadTasks": "加载所有模式任务",
+      "loading": "加载中...",
+      "manualAdd": "手动添加任务",
+      "manualAddPlaceholder": "输入自定义任务",
+      "selectedTasks": "已选择的任务",
+      "taskCount": "个任务",
+      "createButton": "创建模式",
+      "cancel": "取消",
+      "nameRequired": "请输入模式名称",
+      "tasksRequired": "请至少添加一个任务"
+    },
+    "messages": {
+      "createSuccess": "自定义模式创建成功！",
+      "deleteSuccess": "自定义模式已删除",
+      "loadTasksError": "加载任务失败，请重试"
+    }
+  },
+  "board": {
+    "start": "起点",
+    "end": "终点",
+    "star": "幸运",
+    "trap": "陷阱"
+  },
+  "tasks": {
+    "challenge": "任务挑战",
+    "starTask": "⭐ 幸运星任务",
+    "trapTask": "💣 陷阱任务",
+    "collisionTask": "💥 碰撞任务",
+    "redExecute": "🔴 红方玩家执行",
+    "blueExecute": "🔵 蓝方玩家执行",
+    "completedReward": "✅ 完成奖励：执行者前进 0-3 格",
+    "failedPenalty": "❌ 未完成惩罚：执行者后退 3-6 格",
+    "collisionCompletedReward": "✅ 完成奖励：执行者留在原地",
+    "collisionFailedPenalty": "❌ 未完成惩罚：执行者返回起点",
+    "emptyQueue": "任务队列空了！休息一下吧！"
+  },
+  "tips": {
+    "twoPlayers": "两人轮流操作",
+    "faceToFace": "面对面互动",
+    "improveRelation": "增进感情"
+  },
+  "toast": {
+    "redForward": "红方 前进 {steps} 格!",
+    "blueForward": "蓝方 前进 {steps} 格!",
+    "redBackward": "红方 后退 {steps} 格!",
+    "blueBackward": "蓝方 后退 {steps} 格!",
+    "redStay": "红方 任务完成，但原地不动。",
+    "blueStay": "蓝方 任务完成，但原地不动。",
+    "redFailedToStart": "🔴 红方任务未完成，返回起点!",
+    "blueFailedToStart": "🔵 蓝方任务未完成，返回起点!",
+    "redCompleted": "🔴 红方 任务完成，留在原地!",
+    "blueCompleted": "🔵 蓝方 任务完成，留在原地!"
+  }
+}

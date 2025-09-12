@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>爱的专属空间</title> 
+    <style> 
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #ffb6c1, #ff69b4); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            color: #333; 
+        } 
+ 
+        #password-container { 
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+            text-align: center; 
+        } 
+ 
+        h1 { 
+            color: #ff1493; 
+            margin-bottom: 20px; 
+        } 
+ 
+        input[type="password"] { 
+            padding: 12px; 
+            margin: 15px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 8px; 
+            width: 100%; 
+            box-sizing: border-box; 
+        } 
+ 
+        button { 
+            padding: 12px 25px; 
+            background-color: #ff1493; 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        } 
+ 
+        button:hover { 
+            background-color: #ff69b4; 
+        } 
+ 
+        #embedded-page { 
+            display: none; 
+            width: 100%; 
+            height: 100vh; 
+            border: none; 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+    <div id="password-container"> 
+        <h1>欢迎来到我们的甜蜜世界</h1> 
+        <p>输入专属密码，开启爱的旅程</p> 
+        <input type="password" id="password" placeholder="请输入密码"> 
+        <button onclick="checkPassword()">进入</button> 
+    </div> 
+    <iframe id="embedded-page" src="https://www.cpfly.top/"></iframe>  
+ 
+    <script> 
+        function checkPassword() { 
+            const password = document.getElementById('password').value;  
+            // 这里设置你的密码 
+            if (password === '123456') { 
+                document.getElementById('password-container').style.display  = 'none'; 
+                document.getElementById('embedded-page').style.display  = 'block'; 
+                // 等待嵌入页面加载完成 
+                document.getElementById('embedded-page').onload  = function () { 
+                    const iframeDoc = this.contentDocument  || this.contentWindow.document;  
+                    // 查找并隐藏具有指定类名的元素 
+                    const githubElements = iframeDoc.querySelectorAll('.github-link.title-github-link,  .lucide.lucide-github');  
+                    githubElements.forEach((element)  => { 
+                        element.style.display  = 'none'; 
+                    }); 
+                }; 
+            } else { 
+                alert('密码错误，请重新输入'); 
+            } 
+        } 
+    </script> 
+</body> 
+ 
+</html> 

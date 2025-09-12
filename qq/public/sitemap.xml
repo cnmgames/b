@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://cpfly.top</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cpfly.top" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cpfly.top/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cpfly.top/ja" />
+  </url>
+  <url>
+    <loc>https://cpfly.top/en</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cpfly.top" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cpfly.top/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cpfly.top/ja" />
+  </url>
+  <url>
+    <loc>https://cpfly.top/ja</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cpfly.top" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cpfly.top/en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cpfly.top/ja" />
+  </url>
+  <url>
+    <loc>https://cpfly.top/how-to-play</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cpfly.top/how-to-play" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cpfly.top/en/how-to-play" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cpfly.top/ja/how-to-play" />
+  </url>
+  <url>
+    <loc>https://cpfly.top/game-modes</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cpfly.top/game-modes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cpfly.top/en/game-modes" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cpfly.top/ja/game-modes" />
+  </url>
+  <url>
+    <loc>https://cpfly.top/faq</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cpfly.top/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://cpfly.top/en/faq" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cpfly.top/ja/faq" />
+  </url>
+</urlset>
