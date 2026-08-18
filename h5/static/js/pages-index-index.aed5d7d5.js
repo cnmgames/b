@@ -3810,7 +3810,7 @@ function a2_0x15ac() {
 		'img_obj', 'substr', 'rect', 'replace', 'callee', '.json', 'distance', 'keyboard', 'decrypt', '人物头像',
 		'speed', 'extend-title', 'encryptNumber', 'exports', 'small', 'goTurntable', 'translateX(-50%)', '#e47470',
 		'borderColor', 'tip-box',
-		'\n\t<br>\n\t\x0a\x091.公众号：小坤哥哥！\x0a\x09<br>\x0a\x09\n\t<br>\n\t2.\x20验证码和识别码是一一对应的哦！请发送验证码到公众号，然后换取您的识别码。\x0a\x09<br>\x0a\x09\n\t<br>\n\t3.\x20这个游戏只是为了娱乐而设计的，请不要将其用于商业用途或违法活动。\x0a\x09<br>\x0a\x09\n\t<br>\n\t4.最后祝大家有个愉快的游戏体验！\x0a\x09',
+		'\n\t<br>\n\t\x0a\x091.公众号：小坤爱玩\x0a\x09<br>\x0a\x09\n\t<br>\n\t2.\x20验证码和识别码是一一对应的哦！请发送验证码到公众号，然后换取您的识别码。\x0a\x09<br>\x0a\x09\n\t<br>\n\t3.\x20这个游戏只是为了娱乐而设计的，请不要将其用于商业用途或违法活动。\x0a\x09<br>\x0a\x09\n\t<br>\n\t4.最后祝大家有个愉快的游戏体验！\x0a\x09',
 		'lockVipClick', 'drawAnimFrame', 'newCode', 'toString', 'value_area', 'bullet-close', 'default', 'widthFix',
 		'onCustom', 'fill', '2919992OZiHtL', 'pow', 'open', '5530', 'pass-box', '去激活', 'x_left', '76rpx',
 		'Error\x20pJS\x20-\x20No\x20image.src', 'url', 'pushing', 'mixin', 'avatarGroup',
