@@ -673,7 +673,7 @@
           staticClass: "iptBox"
         }, [s("div", {
           staticClass: "iptTitle"
-        }, [t._v("公众号(小坤哥哥)"), s("br"), t._v("回复：识别码")]), s("input", {
+        }, [t._v("公众号(小坤爱玩)"), s("br"), t._v("回复：识别码")]), s("input", {
           directives: [{
             name: "model",
             rawName: "v-model",
@@ -776,7 +776,7 @@
           staticClass: "errorTip"
         }, [t._v(" 激活码可畅玩所有游戏及版本。后期会持续更新更多情趣游戏，敬请期待！"), s("br"), t
           ._v(" 注意：激活码会因某些因素掉绑，如果掉了公众号回复【客服】添加客服微信解决"), s(
-            "br"), t._v(" 激活码获取地址:公众号【小坤哥哥】 ")
+            "br"), t._v(" 激活码获取地址:公众号【小坤爱玩】 ")
         ]), s("button", {
           staticClass: "iptBtn",
           attrs: {
