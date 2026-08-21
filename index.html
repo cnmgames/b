@@ -7,7 +7,6 @@
     <link rel="icon" type="image/x-icon" href="https://z1.ax1x.com/2023/10/01/pPLK9vn.jpg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
         body {
             margin: 0;
             padding: 0;
@@ -15,7 +14,6 @@
             background-color: #fff;
             overflow: hidden;
         }
-
         #particles-js {
             position: fixed;
             z-index: -1;
@@ -23,7 +21,6 @@
             height: 100vh;
             background-color: transparent;
         }
-
         .container {
             position: absolute;
             top: 50%;
@@ -37,7 +34,6 @@
             width: 80%;
             max-width: 400px;
         }
-
         .avatar {
             width: 100px;
             height: 100px;
@@ -47,18 +43,15 @@
             background-size: cover;
             animation: breathing 3s infinite ease-in-out;
         }
-
         @keyframes breathing {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
-
         .intro {
             font-size: 16px;
             margin-bottom: 20px;
         }
-
         .button {
             display: block;
             margin: 10px auto;
@@ -70,7 +63,6 @@
             font-size: 14px;
             transition: background-color 0.3s ease;
         }
-
         .button:hover {
             background: linear-gradient(to right, #7ae2d1, #61c0bf);
         }
@@ -90,7 +82,6 @@
         <a class="button" href="https://ttla.top/h7/index.html" target="_blank">摇骰子</a>
         <a class="button" href="https://weidian.com/?userid=1388425837" target="_blank">获取识别码</a>
     </div>
-
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         particlesJS('particles-js', {
@@ -204,75 +195,163 @@
     inset: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     z-index: 99999;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .notice-wrap {
-    width: 75%;
-    max-width: 340px;
+    width: 82%;
+    max-width: 360px;
     background: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     overflow: hidden;
-    animation: popIn 0.3s ease-out;
+    animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
 }
 @keyframes popIn {
-    0% {transform: scale(0.85);opacity:0;}
-    100% {transform: scale(1);opacity:1;}
+    0% {transform: scale(0.7) translateY(20px);opacity:0;}
+    100% {transform: scale(1) translateY(0);opacity:1;}
+}
+.notice-badge {
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff6b9d, #ff8e53);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 16px;
+    border-radius: 0 0 12px 12px;
+    letter-spacing: 1px;
+    z-index: 2;
 }
 .notice-header {
-    background: linear-gradient(135deg, #5078ff, #2b58e8);
-    padding:14px;
-    text-align:center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 32px 20px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.notice-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+    animation: shimmer 3s infinite;
+}
+@keyframes shimmer {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.notice-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 8px;
+    animation: bounce 2s infinite;
+    position: relative;
+    z-index: 1;
+}
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-8px);}
 }
 .notice-header h3 {
-    margin:0;
-    color:#fff;
-    font-size:17px;
-    font-weight:600;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
 }
 .notice-body {
-    padding:26px 22px;
-    text-align:center;
+    padding: 28px 24px 20px;
+    text-align: center;
 }
 .notice-body p {
-    margin:0;
-    font-size:16px;
-    color:#444;
-    line-height:1.7;
+    margin: 0;
+    font-size: 17px;
+    color: #333;
+    line-height: 1.8;
+    font-weight: 500;
+}
+.notice-body .highlight {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 19px;
+}
+.notice-body .sub-text {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
 }
 .notice-footer {
-    padding:0 22px 22px;
-    text-align:center;
+    padding: 0 24px 24px;
+    display: flex;
+    gap: 12px;
 }
-.notice-btn {
-    border:none;
-    background: linear-gradient(135deg, #5078ff, #2b58e8);
-    color:#fff;
-    padding:10px 32px;
-    border-radius:10px;
-    font-size:15px;
-    cursor:pointer;
-    transition:0.2s;
+.notice-btn-primary {
+    flex: 1;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 13px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
-.notice-btn:hover {
-    opacity:0.88;
+.notice-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+.notice-btn-primary:active {
+    transform: translateY(0);
+}
+.notice-btn-secondary {
+    border: none;
+    background: #f0f0f0;
+    color: #888;
+    padding: 13px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.notice-btn-secondary:hover {
+    background: #e5e5e5;
+    color: #666;
 }
 </style>
-
 <div class="notice-mask" id="popNotice">
     <div class="notice-wrap">
+        <div class="notice-badge">NEW</div>
         <div class="notice-header">
-            <h3>📢 版本预告</h3>
+            <span class="notice-icon">🎮</span>
+            <h3>新版游戏已上线</h3>
         </div>
         <div class="notice-body">
-            <p>游戏即将继续新增不同玩法！</p>
+            <p><span class="highlight">公测版</span> 现已开放体验</p>
+            <p class="sub-text">更多玩法 · 更优体验 · 等你探索</p>
         </div>
         <div class="notice-footer">
-            <button class="notice-btn" onclick="popNotice.style.display='none'">了解啦</button>
+            <button class="notice-btn-secondary" onclick="popNotice.style.display='none'">稍后</button>
+            <button class="notice-btn-primary" onclick="window.open('https://love.ttla.top','_blank')">立即体验 →</button>
         </div>
     </div>
 </div>
